@@ -1,8 +1,8 @@
 {
-  "name": "packageName",
+  "name": "@nozomuikuta/unfeed",
   "version": "0.0.0",
   "description": "",
-  "repository": "unjs/packageName",
+  "repository": "NozomuIkuta/unfeed",
   "license": "MIT",
   "sideEffects": false,
   "type": "module",
