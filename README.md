@@ -7,6 +7,52 @@
 
 > Package description
 
+## Compatibility Table (WIP)
+
+⚠️: under investigation and/or consideration
+
+### Top-level Properties
+
+|Unfeed|JSON Feed|Atom|RSS|
+|:---|:---:|:---:|:---:|
+|`title`|`title`|`title`|`title`|
+|`subtitle`|🚫|`subtitle`|🚫|
+|`id`|🚫|`id`|🚫|
+|⚠️|`home_page_url`|⚠️|`link`|
+|⚠️|`feed_url`|⚠️|⚠️|
+|⚠️|`description`|⚠️|`description`|
+|⚠️|`user_comment`|⚠️|⚠️|
+|⚠️|`next_url`|⚠️|⚠️|
+|⚠️|`icon`|⚠️|⚠️|
+|⚠️|`favicon`|⚠️|⚠️|
+|⚠️|`authors`|⚠️|⚠️|
+|⚠️|🚫|🚫|`managingEditor`|
+|⚠️|🚫|🚫|`webMaster`|
+|⚠️|`language`|⚠️|`language`|
+|⚠️|`expired`|⚠️|⚠️|
+|⚠️|`hubs`|⚠️|⚠️|
+
+
+### Item-level Properties
+
+|Unfeed|JSON Feed|Atom|RSS|
+|:---|:---:|:---:|:---:|
+|`items`|`items` (array of `item`)|`entries` (array of `entry`)|`entries` (array of `entry`)|
+|`item.id`|`item.id`|`entry.id`|`entry.guid`|
+|`item.url`|`item.url`|`entry.link`|`entry.link`|
+|`item.externalUrl`|`item.external_url`|🚫|🚫|
+|`item.title`|`item.title`|`entry.title`|`entry.title`|
+|⚠️ `item.contentHtml`|`item.content_html`|`entry.content`|🚫|
+|⚠️ `item.contentText`|`item.content_text`|`entry.content`|🚫|
+|`item.summary`|`item.summary`|`entry.summary`|`entry.description`|
+|`item.image`|`item.summary`|🚫|🚫|
+|`item.bannerImage`|`item.banner_image`|🚫|🚫|
+|`item.datePublished`|`item.date_published`|`entry.published`|`entry.pubDate`|
+|`item.dateModified`|`item.date_modified`|`entry.updated`|🚫|
+|`item.authors`|`item.authors`|`entry.author` (first element)|`entry.author` (first element)|
+|`item.tags`|`item.tags`|🚫|🚫|
+|`item.language`|`item.language`|🚫|🚫|
+
 ## Usage
 
 Install package:
